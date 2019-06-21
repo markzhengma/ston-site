@@ -125,22 +125,22 @@ body{
 }
 #timeline-sec{
     background-color: rgba(243, 201, 221, 0.6);
-    height: 100vw;
-    max-height: 700px;
+    height: fit-content;
+    /* max-height: 700px; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.timeline-mockup{
+/* .timeline-mockup{
     height: 100%;
     width: 100%;
     background-image: url('./Images/tl_mockup.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 #tour-sec{
     background-color: #A6CFE2;
     height: 100vw;
@@ -224,4 +224,542 @@ body{
     min-width: 200px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/* timeline css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #584848;
+  color: #fff;
+} */
+
+/* img {
+  display:none;
+}
+:hover img {
+  display:block;
+} */
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+    background-color: rgba(243, 201, 221, 0.8);
+    padding: 50px 0;
+    width: 100%;
+}
+
+.section .container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+    margin-top: 20px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2.5rem;
+}
+
+.section h3 {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  height: 210px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  /* background: white; */
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 8px;
+  height: 19px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* img styles */
+
+.img_description {
+  position: center;
+  background: rgba(58, 48, 30, 0.456);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  height: 160px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_Homosocial {
+  background-image: url("./Images/Timeline/img_Homosocial.jpg");;
+  /* position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+  background-size: cover;
+}
+
+.img_Queer {
+  background-image: url("./Images/Timeline/img_Queer.jpg");
+  background-size: cover;
+}
+.img_Transgressing_gender {
+  background-image: url("./Images/Timeline/img_Transgressing_gender.jpg");
+  background-size: cover;
+}
+
+.img_Boston_marriage {
+  background-image: url("./Images/Timeline/img_Boston_marriage.jpg");
+  background-size: cover;
+}
+
+.img_Womens_rights {
+  background-image: url("./Images/Timeline/img_Womens_rights.jpg");
+  background-size: cover;
+}
+
+.img_Outlawing_CrossDressing {
+  background-image: url("./Images/Timeline/img_Outlawing_CrossDressing.jpg");
+  background-size: cover;
+}
+
+.img_First_drag_balls {
+  background-image: url("./Images/Timeline/img_First_drag_balls.jpg");
+  background-size: cover;
+}
+
+.img_Homosexual {
+  background-image: url("./Images/Timeline/img_Homosexual.jpg");
+  background-size: cover;
+}
+
+.img_Herculine_Barbin {
+  background-image: url("./Images/Timeline/img_Herculine_Barbin.jpg");
+  background-size: cover;
+}
+
+.img_heterosexual {
+  background-image: url("./Images/Timeline/img_heterosexual.jpg");
+  background-size: cover;
+}
+
+.img_Gross_indecency {
+  background-image: url("./Images/Timeline/img_Gross_indecency.jpg");
+  background-size: cover;
+}
+
+.img_lesbian {
+  background-image: url("./Images/Timeline/img_lesbian.jpg");
+  background-size: cover;
+}
+
+.img_Intersexes {
+  background-image: url("./Images/Timeline/img_Intersexes.jpg");
+  background-size: cover;
+}
+
+.img_Homosexuality {
+  background-image: url("./Images/Timeline/img_Homosexuality.jpg");
+  background-size: cover;
+}
+
+.img_Committee_of_Fourteen {
+  background-image: url("./Images/Timeline/img_Committee_of_Fourteen.jpg");
+  background-size: cover;
+}
+
+.img_Earl_Lind {
+  background-image: url("./Images/Timeline/img_Earl_Lind.jpg");
+  background-size: cover;
+}
+
+.img_Magnus_Hirschfield {
+  background-image: url("./Images/Timeline/img_Magnus_Hirschfield.jpg");
+  background-size: cover;
+}
+
+.img_Society_for_Human_Rights {
+  background-image: url("./Images/Timeline/img_Society_for_Human_Rights.jpg");
+  background-size: cover;
+}
+
+.img_Hollywood_Production_Code {
+  background-image: url("./Images/Timeline/img_Hollywood_Production_Code.jpg");
+  background-size: cover;
+}
+
+.img_Dyke_Faggot {
+  background-image: url("./Images/Timeline/img_Dyke_Faggot.jpg");
+  background-size: cover;
+}
+
+.img_gay {
+  background-image: url("./Images/Timeline/img_gay.jpg");
+  background-size: cover;
+}
+
+.img_Miss_Major {
+  background-image: url("./Images/Timeline/img_Miss_Major.jpg");
+  background-size: cover;
+}
+
+.img_Marsha_P_Johnson {
+  background-image: url("./Images/Timeline/img_Marsha_P_Johnson.jpg");
+  background-size: cover;
+}
+
+.img_Lavender_Scare {
+  background-image: url("./Images/Timeline/img_Lavender_Scare.jpg");
+  background-size: cover;
+}
+
+.img_Pauli_Murray {
+  background-image: url("./Images/Timeline/img_Pauli_Murray.jpg");
+  background-size: cover;
+}
+
+.img_postwar_era {
+  background-image: url("./Images/Timeline/img_postwar_era.jpg");
+  background-size: cover;
+}
+
+.img_Sylvia_Rivera {
+  background-image: url("./Images/Timeline/img_Sylvia_Rivera.jpg");
+  background-size: cover;
+}
+
+.img_American_Psychiatric_Association {
+  background-image: url("./Images/Timeline/img_American_Psychiatric_Association.jpg");
+  background-size: cover;
+}
+
+.img_Homosexual_bans {
+  background-image: url("./Images/Timeline/img_Homosexual_bans.jpg");
+  background-size: cover;
+}
+
+.img_Daughters_of_Bilitis {
+  background-image: url("./Images/Timeline/img_Daughters_of_Bilitis.jpg");
+  background-size: cover;
+}
+
+.img_Hose_Heels_Club {
+  background-image: url("./Images/Timeline/img_Hose_Heels_Club.jpg");
+  background-size: cover;
+}
+
+.img_Picketting {
+  background-image: url("./Images/Timeline/img_Picketting.jpg");
+  background-size: cover;
+}
+
+.img_Julius_Bar {
+  background-image: url("./Images/Timeline/img_Julius_Bar.jpg");
+  background-size: cover;
+}
+
+.img_Snake_Pit {
+  background-image: url("./Images/Timeline/img_Snake_Pit.jpg");
+  background-size: cover;
+}
+
+.img_1st_Pride_NYC {
+  background-image: url("./Images/Timeline/img_1st_Pride_NYC.jpg");
+  background-size: cover;
+}
+
+.img_STAR {
+  background-image: url("./Images/Timeline/img_STAR.jpg");
+  background-size: cover;
+}
+
+.img_LGBTQ_Election {
+  background-image: url("./Images/Timeline/img_LGBTQ_Election.jpg");
+  background-size: cover;
+}
+
+.img_LaBeija {
+  background-image: url("./Images/Timeline/img_LaBeija.jpg");
+  background-size: cover;
+}
+
+.img_Mattachine_Society {
+  background-image: url("./Images/Timeline/img_Mattachine_Society.jpg");
+  background-size: cover;
+}
+
+.img_Oscar_Wilde_Bookshop {
+  background-image: url("./Images/Timeline/img_Oscar_Wilde_Bookshop.jpg");
+  background-size: cover;
+}
+
+.img_gay_pride_flag {
+  background-image: url("./Images/Timeline/img_gay_pride_flag.jpg");
+  background-size: cover;
+}
+
+.img_Gay_Liberation {
+  background-image: url("./Images/Timeline/img_Gay_Liberation.jpg");
+  background-size: cover;
+}
+
+.img_House_of_Xtravaganza {
+  background-image: url("./Images/Timeline/img_House_of_Xtravaganza.jpg");
+  background-size: cover;
+}
+
+.img_Paris_Is_Burning {
+  background-image: url("./Images/Timeline/img_Paris_Is_Burning.jpg");
+  background-size: cover;
+}
+
+.img_reclaim_queer {
+  background-image: url("./Images/Timeline/img_reclaim_queer.jpg");
+  background-size: cover;
+}
+
+.img_Gay_Liberation_moved {
+  background-image: url("./Images/Timeline/img_Gay_Liberation_moved.jpg");
+  background-size: cover;
+}
+
+.img_Transgender_Pride_Flag {
+  background-image: url("./Images/Timeline/img_Transgender_Pride_Flag.jpg");
+  background-size: cover;
+}
+
+.img_Netherlands_samesex_marriage {
+  background-image: url("./Images/Timeline/img_Netherlands_samesex_marriage.jpg");
+  background-size: cover;
+}
+
+.img_Belgium_samesex_marriage {
+  background-image: url("./Images/Timeline/img_Belgium_samesex_marriage.jpg");
+  background-size: cover;
+}
+
+.img_Massachusetts_samesex_marriage {
+  background-image: url("./Images/Timeline/img_Massachusetts_samesex_marriage.jpg");
+  background-size: cover;
+}
+
+.img_Connecticut_samesex_marriage {
+  background-image: url("./Images/Timeline/img_Connecticut_samesex_marriage.jpg");
+  background-size: cover;
+}
+
+.img_Harvey_Milk_Day {
+  background-image: url("./Images/Timeline/img_Harvey_Milk_Day.jpg");
+  background-size: cover;
+}
+
+.img_new_pride_flag {
+  background-image: url("./Images/Timeline/img_new_pride_flag.jpg");
+  background-size: cover;
+}
+
+.img_new_pride_flag_2018 {
+  background-image: url("./Images/Timeline/img_new_pride_flag_2018.jpg");
+  background-size: cover;
+}
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: .5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li div {
+    position: static;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
 }
