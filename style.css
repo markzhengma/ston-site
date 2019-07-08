@@ -436,7 +436,6 @@ body{
   font-size: 1rem;
   white-space: normal;
   color: black;
-  /* background: white; */
 }
 
 .timeline ol li div::before {
@@ -497,10 +496,9 @@ body{
   height: 160px;
   width: 250px;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 5px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .img_wrap:hover .img_description {
