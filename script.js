@@ -15,7 +15,7 @@ window.onload = function(){
     }
 
     let $compareImg = $("#diff-img");
-    let $compareIndexArr = [0, 1];
+    let $compareIndexArr = [0, 1, 2, 3, 4];
     $compareImg.css("background-image", "url('./Images/Compares/compare_0.jpg')");
     let $prevCompareBtn = $("#prev-btn");
     let $nextCompareBtn = $("#next-btn");
@@ -46,7 +46,7 @@ window.onload = function(){
     let $lpBtn = $('#lp-btn');
     let $tlBtn = $('#tl-btn');
     let $tourBtn = $('#tour-btn');
-    let $galleryBtn = $('#gallery-btn');
+    let $mapBtn = $('#map-btn');
     let $quoteBtn = $('#quote-btn')
 
     $lpBtn.click(function(){
@@ -61,13 +61,87 @@ window.onload = function(){
     $tourBtn.click(function(){
         $('html,body').animate({'scrollTop': $('#tour-sec').offset().top}, 600);
     });
-    $galleryBtn.click(function(){
-        $('html,body').animate({'scrollTop': $('#gallery-sec').offset().top}, 600);
+    $mapBtn.click(function(){
+        $('html,body').animate({'scrollTop': $('#map-sec').offset().top}, 600);
     });
 
-    let currentImgIndex = 4;
-    let $galleryImgs = $('.gallery-single');
-    for(var i = 0; i < $galleryImgs.length; i ++){
-        $galleryImgs[i].setAttribute('style', `background-image: url("./Images/Gallery/gallery_${i}.jpg")`);
+    let $mapList = $('#map-list');
+    let $mapDesc = $('#map-desc');
+    let $mapBox = $('#map-box');
+
+    if($(window).width() >= 1100){
+        $mapList.removeClass('list-hide');
+        $mapList.addClass('list-show');
+    }else{
+        $mapList.removeClass('list-show');
+        $mapList.addClass('list-hide');
+    };
+    
+    $mapBox.click(function(){
+        if($mapList.hasClass("list-show") && $(window).width() < 1100){
+            $mapList.removeClass("list-show");
+            $mapList.addClass("list-hide");
+        }
+    });
+    let locationArr = [
+        {
+            title: "Stonewall Inn", 
+            desc: "The Stonewall Inn was one of the few places that welcomed LGBTQ patrons. It was popular for dancing and attracted mostly male patrons.  It was accessible to drag queens, transgendered people, homeless youth, and butch lesbians looking for a safe space.  It was also a racially diverse bar.  Raids were frequent at the Stonewall Inn and other gay bars.  On June 28, 1969 at 1:20am, four plainclothes officers initiated an unannounced raid that attracted attention and crowds and sparked Stonewall riots."
+        },
+        {
+            title: "Mattachine Society",
+            desc: "The Mattachine Society was one of the earliest LGBTQ organizations.  They were known for raising personal and social education about the rights and activities of LGBTQ people.  After Stonewall, the Mattachine Society slowly declined as it was deemed too traditional in the civil rights era. The Mattachine Society of NYC was housed at 59 Christopher St., near the Stonewall Inn and today is the Kettle of Fish Bar."
+        },
+        {
+            title: "Julius’ Bar",
+            desc: "Prior to Stonewall, Julius’ Bar was an important site of LGBTQ resistant.  Numerous sip-ins, taken from civil rights lunch counter sit-ins, occurred here beginning in 1966."
+        },
+        {
+            title: "Oscar Wilde Bookshop",
+            desc: "The Oscar Wilde Bookshop was originally located on Mercer St. and moved to Christopher St. in 1973 to be closer to the heart of gay life. The bookstore was an important location for finding LGBTQ liberation materials.  Many gay writers visited the store when in NYC.  The owners documented the Stonewall riots."
+        },
+        {
+            title: "Christopher Park",
+            desc: "Christopher Park is today the site of the Stonewall National Park and the Gay Liberation Monument.  The park was a popular hangout for gay homeless youth in the 1960s.  During the Stonewall Riots in 1969, crowds filled this space. It was a center of the riots against anti-LGBTQ police raids.  The riots flowed from the park and filled the adjacent streets.  It remains a central location for LGBTQ activism."
+        },
+        {
+            title: "Washington Place",
+            desc: "The Christopher Street Liberation Day March took thousands of people from Washington Place to Sheep’s Meadow in Central Park.  Held on June 28, 1970, one year after the Stonewall Uprising, it became NYC’s first Gay Pride March."
+        },
+        {
+            title: "Snake Pit",
+            desc: "The Snake Pit was another gay-run after hours bar.  It was raided March 8, 1970.  The police arrested 167 people and an Argentinian immigrant was impaled when he jumped or was pushed from the second story at the police station.  This event, near to and less than a year after Stonewall, encouraged even more people to join the LGBTQ Revolution."
+        },
+        {
+            title: "Gay Liberation Front’s Alternate U",
+            desc: "The Gay Liberation Front was an activist organization formed following Stonewall. “The Gay Liberation Front is a militant coalition of radical and revolutionary homosexual men and women committed to fight the oppression of the homosexual as a minority group and to demand the right to self-determination of our own bodies”.  Gay Liberation Front, February 1970 newsletter"
+        },
+        {
+            title: "Washington Square Park",
+            desc: "One month after the Stonewall raid and uprising, 500 activists gathered in Washington Square Park for a “Gay Power” demonstration, a first LGBTQ rally in NYC."
+        },
+        {
+            title: "Greenwich Village",
+            desc: "Greenwich Village was an important counterculture site during the 1960s.  In addition to other civil rights activities, it was housed to a gay bookstore and most gay and lesbian establishments in NYC."
+        }
+    ];
+    for(var i = 0; i < locationArr.length; i ++){
+        let mapSingle = $('<div class = "map-list-single">'
+        + '<div class = "map-icon"></div>'
+        + '<div class = "map-list-p">' 
+        + locationArr[i].title
+        + '</div>');
+        let desc = locationArr[i].desc;
+        let index = i;
+        mapSingle.click(function(){
+            if(!$mapList.hasClass("list-show")){
+                $mapList.removeClass("list-hide");
+                $mapList.addClass("list-show");
+            }else{
+                $mapDesc.html(desc);
+                $mapBox.css('background-image', 'url("./Images/Map/map_' + index + '.png")')
+            }
+        });
+        $mapList.append(mapSingle); 
     }
 }
