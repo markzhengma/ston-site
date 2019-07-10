@@ -498,8 +498,12 @@ body{
   display: flex;
   justify-content: center;
   padding: 5px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
+
+.img_description::-webkit-scrollbar { 
+  display: none; 
+} 
 
 .img_wrap:hover .img_description {
   visibility: visible;
@@ -508,275 +512,381 @@ body{
 
 .img_Homosocial {
   background-image: url("./Images/Timeline/img_Homosocial.jpg");;
-  /* position: relative;
+  /* position: relative; */
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; */
+  background-position: center;
   background-size: cover;
 }
 
 .img_Queer {
   background-image: url("./Images/Timeline/img_Queer.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .img_Transgressing_gender {
   background-image: url("./Images/Timeline/img_Transgressing_gender.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Boston_marriage {
   background-image: url("./Images/Timeline/img_Boston_marriage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Womens_rights {
   background-image: url("./Images/Timeline/img_Womens_rights.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Outlawing_CrossDressing {
   background-image: url("./Images/Timeline/img_Outlawing_CrossDressing.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_First_drag_balls {
   background-image: url("./Images/Timeline/img_First_drag_balls.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Homosexual {
   background-image: url("./Images/Timeline/img_Homosexual.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Herculine_Barbin {
   background-image: url("./Images/Timeline/img_Herculine_Barbin.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_heterosexual {
   background-image: url("./Images/Timeline/img_heterosexual.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Gross_indecency {
   background-image: url("./Images/Timeline/img_Gross_indecency.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_lesbian {
   background-image: url("./Images/Timeline/img_lesbian.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Intersexes {
   background-image: url("./Images/Timeline/img_Intersexes.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Homosexuality {
   background-image: url("./Images/Timeline/img_Homosexuality.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Committee_of_Fourteen {
   background-image: url("./Images/Timeline/img_Committee_of_Fourteen.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Earl_Lind {
   background-image: url("./Images/Timeline/img_Earl_Lind.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Magnus_Hirschfield {
   background-image: url("./Images/Timeline/img_Magnus_Hirschfield.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Society_for_Human_Rights {
   background-image: url("./Images/Timeline/img_Society_for_Human_Rights.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Hollywood_Production_Code {
   background-image: url("./Images/Timeline/img_Hollywood_Production_Code.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Dyke_Faggot {
   background-image: url("./Images/Timeline/img_Dyke_Faggot.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_gay {
   background-image: url("./Images/Timeline/img_gay.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Miss_Major {
   background-image: url("./Images/Timeline/img_Miss_Major.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Marsha_P_Johnson {
   background-image: url("./Images/Timeline/img_Marsha_P_Johnson.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Lavender_Scare {
   background-image: url("./Images/Timeline/img_Lavender_Scare.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Pauli_Murray {
   background-image: url("./Images/Timeline/img_Pauli_Murray.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_postwar_era {
   background-image: url("./Images/Timeline/img_postwar_era.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Sylvia_Rivera {
   background-image: url("./Images/Timeline/img_Sylvia_Rivera.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_American_Psychiatric_Association {
   background-image: url("./Images/Timeline/img_American_Psychiatric_Association.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Homosexual_bans {
   background-image: url("./Images/Timeline/img_Homosexual_bans.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Daughters_of_Bilitis {
   background-image: url("./Images/Timeline/img_Daughters_of_Bilitis.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Hose_Heels_Club {
   background-image: url("./Images/Timeline/img_Hose_Heels_Club.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Picketting {
   background-image: url("./Images/Timeline/img_Picketting.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Julius_Bar {
   background-image: url("./Images/Timeline/img_Julius_Bar.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Snake_Pit {
   background-image: url("./Images/Timeline/img_Snake_Pit.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_1st_Pride_NYC {
   background-image: url("./Images/Timeline/img_1st_Pride_NYC.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_STAR {
   background-image: url("./Images/Timeline/img_STAR.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_LGBTQ_Election {
   background-image: url("./Images/Timeline/img_LGBTQ_Election.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_LaBeija {
   background-image: url("./Images/Timeline/img_LaBeija.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Mattachine_Society {
   background-image: url("./Images/Timeline/img_Mattachine_Society.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Oscar_Wilde_Bookshop {
   background-image: url("./Images/Timeline/img_Oscar_Wilde_Bookshop.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_gay_pride_flag {
   background-image: url("./Images/Timeline/img_gay_pride_flag.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Gay_Liberation {
   background-image: url("./Images/Timeline/img_Gay_Liberation.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_House_of_Xtravaganza {
   background-image: url("./Images/Timeline/img_House_of_Xtravaganza.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Paris_Is_Burning {
   background-image: url("./Images/Timeline/img_Paris_Is_Burning.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_reclaim_queer {
   background-image: url("./Images/Timeline/img_reclaim_queer.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Gay_Liberation_moved {
   background-image: url("./Images/Timeline/img_Gay_Liberation_moved.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Transgender_Pride_Flag {
   background-image: url("./Images/Timeline/img_Transgender_Pride_Flag.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Netherlands_samesex_marriage {
   background-image: url("./Images/Timeline/img_Netherlands_samesex_marriage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Belgium_samesex_marriage {
   background-image: url("./Images/Timeline/img_Belgium_samesex_marriage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Massachusetts_samesex_marriage {
   background-image: url("./Images/Timeline/img_Massachusetts_samesex_marriage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Connecticut_samesex_marriage {
   background-image: url("./Images/Timeline/img_Connecticut_samesex_marriage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_Harvey_Milk_Day {
   background-image: url("./Images/Timeline/img_Harvey_Milk_Day.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_new_pride_flag {
   background-image: url("./Images/Timeline/img_new_pride_flag.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img_new_pride_flag_2018 {
   background-image: url("./Images/Timeline/img_new_pride_flag_2018.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* TIMELINE ARROWS
